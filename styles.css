@@ -284,6 +284,22 @@ nav {
 
 .product-link:hover { color: var(--blue-light); }
 
+.price {
+    font-weight: 700;
+    color: var(--blue-mid);
+    font-size: 0.95rem;
+    margin: 0.25rem 0 0;
+}
+
+.grid-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-muted);
+}
+
+.grid-message a { color: var(--blue-mid); }
+
 /* ─── COMMISSIONS BANNER ──────────────────────────────── */
 .commissions-banner {
     background: linear-gradient(135deg, var(--navy) 0%, var(--blue-mid) 100%);
