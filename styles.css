@@ -1,13 +1,13 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-    --navy:      #0a0e2a;
-    --blue-mid:  #2236a0;
-    --blue-light:#80a3ff;
+    --navy:      #1a2455;
+    --blue-mid:  #3b52c4;
+    --blue-light:#a3bcff;
     --white:     #ffffff;
     --off-white: #f4f6ff;
     --text:      #1a1a2e;
-    --text-muted:#6066a0;
+    --text-muted:#8088b8;
 }
 
 html { scroll-behavior: smooth; }
