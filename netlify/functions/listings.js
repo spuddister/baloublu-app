@@ -1,7 +1,7 @@
 exports.handler = async () => {
   const res = await fetch(
-    'https://openapi.etsy.com/v3/application/shops/Baloublu/listings/active?includes=Images&limit=100',
-    { headers: { 'x-api-key': process.env.ETSY_API_KEY } }
+    'https://openapi.etsy.com/v3/application/shops/62220981/listings/active?includes=Images&limit=100',
+    { headers: { 'x-api-key': `${process.env.ETSY_API_KEY}:${process.env.ETSY_SECRET}` } }
   );
 
   if (!res.ok) {
