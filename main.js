@@ -68,7 +68,7 @@ function getCategory(listing) {
     const tags     = listing.tags.map(t => t.toLowerCase());
     const taxonomy = (listing.taxonomy_path || []).join(' ').toLowerCase();
     if (POTTERY_TERMS.some(t => tags.includes(t) || taxonomy.includes(t))) return 'pottery';
-    if (listing.type === 'download') return 'digital';
+    if (listing.listing_type === 'download') return 'digital';
     if (tags.some(t => t.includes('original'))) return 'original';
     return 'physical';
 }
