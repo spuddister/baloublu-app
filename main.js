@@ -144,10 +144,10 @@ async function loadListings() {
         });
 
         if (!artGrid.querySelector('.product-card')) {
-            artGrid.innerHTML = '<p class="grid-message">No art listings found.</p>';
+            artGrid.innerHTML = '<p class="grid-message">No inventory right now — but commissions are always welcome! <a href="#contact">Get in touch.</a></p>';
         }
         if (!potteryGrid.querySelector('.product-card')) {
-            potteryGrid.innerHTML = '<p class="grid-message">No pottery listings found.</p>';
+            potteryGrid.innerHTML = '<p class="grid-message">No inventory right now — but commissions are always welcome! <a href="#contact">Get in touch.</a></p>';
         }
     } catch {
         setGridError(artGrid);
